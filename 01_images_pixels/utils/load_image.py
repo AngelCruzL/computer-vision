@@ -14,7 +14,7 @@ def load_image(image_name):
     if path.__contains__('01_images_pixels'):
         path = path.replace('01_images_pixels', '')
 
-    image_path = os.path.join(path, '01_images_pixels',
+    image_path = os.path.join(path, '01_images_pixels', 'img',
                               image_name)
 
     return image_path
