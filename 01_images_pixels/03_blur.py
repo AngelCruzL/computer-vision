@@ -1,7 +1,9 @@
 import cv2
 import numpy as np
+from utils.load_image import load_image
 
-original_image = cv2.imread('01_images_pixels/bird.jpg', cv2.IMREAD_COLOR)
+image_path = load_image('bird.jpg')
+original_image = cv2.imread(image_path, cv2.IMREAD_COLOR)
 
 # To normalize the array we need to divide the 25 items by themselves
 kernel = np.ones((5, 5)) / 25

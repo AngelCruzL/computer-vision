@@ -1,6 +1,8 @@
 import cv2
+from utils.load_image import load_image
 
-image = cv2.imread('01_images_pixels/camus.jpg', cv2.IMREAD_GRAYSCALE)
+image_path = load_image('camus.jpg')
+image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
 # On grayscale values close to 0 are black, values close to 255 are white
 print(image)

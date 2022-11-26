@@ -1,6 +1,8 @@
 import cv2
+from utils.load_image import load_image
 
-image = cv2.imread('01_images_pixels/bird.jpg', cv2.IMREAD_COLOR)
+image_path = load_image('bird.jpg')
+image = cv2.imread(image_path, cv2.IMREAD_COLOR)
 
 print(image.shape)
 print(image)
